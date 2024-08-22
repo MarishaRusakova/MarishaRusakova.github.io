@@ -62,6 +62,10 @@ html{
   white-space: nowrap;
 }
 
+.header__gap-block{
+  display: none;
+}
+
 .purple-btn {
   padding: 25px 54px;
   border-radius: 1000px;
@@ -128,11 +132,6 @@ html{
 
 .header__nav-list-link:active{
   color: #4F28A5;
-}
-
-.header__gap-block{
-  height: 1px;
-  width: 209px;
 }
 
 .header__nav-list {
@@ -987,17 +986,17 @@ html{
 
 .about-us__name-text{
   height: 70px;
-  width: 445px;
+  max-width: 445px;
 }
 
 .about-us__email-text{
   height: 70px;
-  width: 445px;
+  max-width: 445px;
 }
 
 .about-us_comm-text{
   height: 150px;
-  width: 920px;
+  max-width: 920px;
   margin-bottom: 30px;
 }
 
@@ -1169,7 +1168,7 @@ input[type="checkbox"]:checked + label:before {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-  background: url(wave.png) repeat-x;
+  background: url(../image/wave.png) repeat-x;
 }
 
 .footer__capcha{
@@ -1189,7 +1188,7 @@ input[type="checkbox"]:checked + label:before {
   }  
 
   .header{
-    width: 1024px;
+    max-width: 1024px;
     height: 144px;
   }
 
@@ -1209,19 +1208,30 @@ input[type="checkbox"]:checked + label:before {
     padding: 22px 100px;
   }
 
+  .header__logo-gap{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__gap-block{
+    display: flex;
+    max-width: 688px;
+    height: 1px;
+  }
+
   .header__nav-list-item:not(:last-child) {
     margin-right: 0px;
   }
 
   .logo {
     position: static;
-    margin-right: 688px;
+    margin-right: 0;
     margin-bottom: 0px;
     max-width: 112px;
   }
 
   .intro{
-    width: 1024px;
+    max-width: 1024px;
   }
 
   .intro__paragraph{
@@ -1236,7 +1246,7 @@ input[type="checkbox"]:checked + label:before {
   }
   
   .podcasts__fon{
-    width: 1024px;
+    max-width: 1024px;
   }
 
   .podcasts__wrapper {
@@ -1245,7 +1255,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .transmission{
-    width: 1024px;
+    max-width: 1024px;
   }
 
   .transmission_cells {
@@ -1253,7 +1263,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .guests{
-    width: 1024px;
+    max-width: 1024px;
   }
 
   .guests_text-two{
@@ -1266,7 +1276,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .playlists{
-    width: 1024px;
+    max-width: 1024px;
   }
 
   .playlists__flex-block{
@@ -1311,9 +1321,9 @@ input[type="checkbox"]:checked + label:before {
     padding-top: 40px;
     padding-left: 10px;
     padding-bottom: 40px;
-    padding-right: 0;
+    padding-right: 10px;
     margin-top: 0;
-    width: 143px;
+    max-width: 143px;
     height: 30px;
   }
 
@@ -1324,7 +1334,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .new__wave{
-    width: 1024px;
+    max-width: 1024px;
   }
 
   .new__mave-photo {
@@ -1333,7 +1343,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .new {
-    width: 100px;
+    max-width: 100px;
     height: 100px;
   }
 
@@ -1354,7 +1364,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .about-us{
-    width: 1024px;
+    max-width: 1024px;
   }
 
   .about-us_text-title{
@@ -1380,21 +1390,21 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .about-us__people-img{
-    max-width: 397px;
+    width: 397px;
     height: auto;
     margin-bottom: 30px;
   }
 
   .about-us_comm{
-    width: 758px;
+    max-width: 758px;
   }
 
   .about-us__email-name-text{
-    width: 331px;
+    max-width: 331px;
   }
 
   .footer{
-    width: 1024px;
+    max-width: 1024px;
   }
 
 }
@@ -1414,7 +1424,7 @@ input[type="checkbox"]:checked + label:before {
   .header{
     height: 140px;
     margin-bottom: 90px;
-    width: 768px;
+    max-width: 768px;
   }
 
   .header__nav-list-link{
@@ -1431,7 +1441,7 @@ input[type="checkbox"]:checked + label:before {
   }
   
   .intro{
-    width: 768px;
+    max-width: 768px;
   }
 
   .intro__microphone{
@@ -1449,7 +1459,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .podcasts__fon{
-    width: 768px;
+    max-width: 768px;
   }
 
   .podcasts__wrapper{
@@ -1457,7 +1467,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .transmission{
-    width: 768px;
+    max-width: 768px;
     padding-top: 94px;
     padding-bottom: 30px;
   }
@@ -1478,7 +1488,7 @@ input[type="checkbox"]:checked + label:before {
     display: flex;
     margin-left: -115px;
     height: 1px;
-    width: 768px;
+    max-width: 768px;
     background-color: #E6E8EC;
     margin-bottom: 30px;
   }
@@ -1502,7 +1512,7 @@ input[type="checkbox"]:checked + label:before {
 
   .guests{
     width: 768px;
-    height: 2264px;
+    max-height: 2264px;
   }
 
   .cell{
@@ -1520,7 +1530,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .img_guests{
-    width: 540px;
+    max-width: 540px;
   }
 
   .inf{
@@ -1528,7 +1538,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .playlists{
-    width: 768px;
+    max-width: 768px;
   }
 
   .playlists_text-one{
@@ -1550,7 +1560,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .new__wave{
-    width: 768px;
+    max-width: 768px;
     padding-top: 30px;
   }
 
@@ -1571,7 +1581,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .new__mave-photo{
-    width: 540px;
+    max-width: 540px;
   }
 
   .about-us__people-img{
@@ -1585,7 +1595,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .about-us{
-    width: 768px;
+    max-width: 768px;
   }
 
   .about-us_text-main{
@@ -1613,7 +1623,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .about-us__figures-dawn{
-    width: 112px;
+    max-width: 112px;
   }
 
   .about-us__text-block{
@@ -1629,7 +1639,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .about-us_comm{
-    width: 474px;
+    max-width: 474px;
   }
 
   .about-us__email-name{
@@ -1637,11 +1647,11 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .about-us__email-name-text{
-    width: 474px;
+    max-width: 474px;
   }
 
   .footer{
-    width: 768px;
+    max-width: 768px;
   }
 
   .footer__flex-block{
@@ -1677,7 +1687,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .header{
-    width: 320px;
+    max-width: 320px;
   }
 
   .header__nav{
@@ -1697,7 +1707,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .intro{
-    width: 320px;
+    max-width: 320px;
   }
 
   .intro__header{
@@ -1746,11 +1756,11 @@ input[type="checkbox"]:checked + label:before {
 
   .podcasts{
     padding: 54px 0;
-    width: 320px;
+    max-width: 320px;
   }
 
   .podcasts__fon{
-    width: 320px;
+    max-width: 320px;
   }
 
   .title{
@@ -1780,7 +1790,7 @@ input[type="checkbox"]:checked + label:before {
   .podcasts__rect{
     top: 0;
     padding: 0 7px;
-    width: 51px;
+    max-width: 51px;
     height: 16px;
   }
 
@@ -1812,7 +1822,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .transmission{
-    width: 320px;
+    max-width: 320px;
     padding: 54px 0;
   }
 
@@ -1908,7 +1918,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .guests{
-    width: 320px;
+    max-width: 320px;
     height: 1940px;
     padding: 54px 0;
   }
@@ -1972,7 +1982,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .playlists{
-    width: 320px;
+    max-width: 320px;
     padding: 54px 0;
   }
 
@@ -2035,7 +2045,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .new__wave{
-    width: 320px;
+    max-width: 320px;
     padding: 54px 0;
   }
 
@@ -2075,9 +2085,9 @@ input[type="checkbox"]:checked + label:before {
 
   .line{
     position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
   }
 
   .text-one{
@@ -2110,12 +2120,12 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .path1{
-    width: 20px;
+    max-width: 20px;
   }
 
   .yandex-logo{
     margin-right: 0;
-    width: 20px;
+    max-width: 20px;
   }
 
   .yellow-button{
@@ -2123,7 +2133,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .about-us{
-    width: 320px;
+    max-width: 320px;
     padding: 54px 0;
   }
 
@@ -2239,7 +2249,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .footer{
-    width: 320px;
+    max-width: 320px;
     padding: 54px 0;
     padding-bottom: 10px;
   }
@@ -2260,7 +2270,7 @@ input[type="checkbox"]:checked + label:before {
 
   .footer__nav-block{
     background-color: #121723;
-    width: 320px;
+    max-width: 320px;
     padding: 30px 32px;
     margin-left: -64px;
   }
