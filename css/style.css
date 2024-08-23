@@ -291,6 +291,7 @@ html{
   padding-bottom: 3px;
   position: absolute;
   bottom: 0;
+  margin-bottom: 7px;
 }
 
 .podcasts__date {
@@ -955,8 +956,12 @@ html{
   max-width: 445px;
 }
 
-.about-us__message{
+.about-us__message-text{
+  max-width: 920px;
   height: 150px;
+}
+
+.about-us__message{
   margin-bottom: 30px;
   background-color: #121723;
   border: 1px solid #FFF;
@@ -966,10 +971,11 @@ html{
   line-height: 20px;
   font-weight: 400;
   padding:30px 32px;
-  width: 100%;
   resize: none;
   overflow: auto;
   margin-bottom: 30px;
+  height: 150px;
+  width: 100%;
 }
 
 .about-us__email-name-text{
@@ -984,8 +990,8 @@ html{
   padding-left: 32px;
   padding-bottom: 25px;
   padding-right: 32px;
-  width: 379px;
-  height: 18px;
+  width: 445px;
+  height: 70px;
   resize: none;
   overflow: hidden;
 }
@@ -1159,7 +1165,6 @@ input[type="checkbox"]:checked + label:before {
   }  
 
   .header{
-    max-width: 1024px;
     height: 144px;
   }
 
@@ -1196,10 +1201,6 @@ input[type="checkbox"]:checked + label:before {
     position: static;
     margin-right: 0;
     margin-bottom: 0px;
-  }
-
-  .intro{
-    max-width: 1024px;
   }
 
   .intro__paragraph{
@@ -1260,8 +1261,7 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .playlists__img{
-    max-width: 112px;
-    height: 112px;
+    height: 113px;
     object-fit: cover;
   }
 
@@ -1276,7 +1276,6 @@ input[type="checkbox"]:checked + label:before {
     padding-right: 10px;
     margin-top: 0;
     width: 100%;
-    height: 30px;
   }
 
   .playlists__cell-podtext{
@@ -1338,16 +1337,16 @@ input[type="checkbox"]:checked + label:before {
     margin-bottom: 30px;
   }
 
-  .about-us_comm{
-    max-width: 758px;
+  .about-us__message-text{
+    max-width: 824px;
+  }
+
+  .about-us_massage{
+    width: 824px;
   }
 
   .about-us__email-name-text{
-    max-width: 331px;
-  }
-
-  .footer{
-    max-width: 1024px;
+    width: 397px;
   }
 
 }
@@ -1378,12 +1377,7 @@ input[type="checkbox"]:checked + label:before {
     padding-right: 114px;
     margin-right: 0px;
     margin-bottom: 90px;
-    max-width: 768px;
     gap: 54px;
-  }
-  
-  .intro{
-    max-width: 768px;
   }
 
   .intro__microphone{
@@ -1400,16 +1394,11 @@ input[type="checkbox"]:checked + label:before {
     margin-right: 0px;
   }
 
-  .podcasts__fon{
-    max-width: 768px;
-  }
-
   .podcasts__wrapper{
     grid-template-columns: repeat(1, 1fr);
   }
 
   .transmission{
-    max-width: 768px;
     padding-top: 94px;
     padding-bottom: 30px;
   }
@@ -1430,7 +1419,6 @@ input[type="checkbox"]:checked + label:before {
     display: flex;
     margin-left: -115px;
     height: 1px;
-    max-width: 768px;
     background-color: #E6E8EC;
     margin-bottom: 30px;
   }
@@ -1453,7 +1441,6 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .guests{
-    width: 768px;
     max-height: 2264px;
   }
 
@@ -1479,10 +1466,6 @@ input[type="checkbox"]:checked + label:before {
     margin-bottom: 30px;
   }
 
-  .playlists{
-    max-width: 768px;
-  }
-
   .playlists_text-one{
     max-width: 539px;
   }
@@ -1502,7 +1485,6 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .new__wave{
-    max-width: 768px;
     padding-top: 30px;
   }
 
@@ -1536,10 +1518,6 @@ input[type="checkbox"]:checked + label:before {
     grid-template-columns: repeat(2, 255px);
   }
 
-  .about-us{
-    max-width: 768px;
-  }
-
   .about-us_text-main{
     margin-bottom: 30px;
     padding-bottom: 0;
@@ -1564,10 +1542,6 @@ input[type="checkbox"]:checked + label:before {
     margin-right: 30px;
   }
 
-  .about-us__figures-dawn{
-    max-width: 112px;
-  }
-
   .about-us__text-block{
     display: flex;
     flex-direction: column;
@@ -1590,10 +1564,6 @@ input[type="checkbox"]:checked + label:before {
 
   .about-us__email-name-text{
     max-width: 474px;
-  }
-
-  .footer{
-    max-width: 768px;
   }
 
   .footer__flex-block{
@@ -1627,10 +1597,6 @@ input[type="checkbox"]:checked + label:before {
     margin-right: 144px;
   }
 
-  .header{
-    max-width: 320px;
-  }
-
   .header__nav{
     overflow: hidden;
   }
@@ -1641,10 +1607,6 @@ input[type="checkbox"]:checked + label:before {
     padding: 17px 32px;
     margin-bottom: 0;
     max-width: 255px;
-  }
-
-  .intro{
-    max-width: 320px;
   }
 
   .intro__header{
@@ -1693,11 +1655,6 @@ input[type="checkbox"]:checked + label:before {
 
   .podcasts{
     padding: 54px 0;
-    max-width: 320px;
-  }
-
-  .podcasts__fon{
-    max-width: 320px;
   }
 
   .title{
@@ -1759,7 +1716,6 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .transmission{
-    max-width: 320px;
     padding: 54px 0;
   }
 
@@ -1855,7 +1811,6 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .guests{
-    max-width: 320px;
     height: 1940px;
     padding: 54px 0;
   }
@@ -1919,7 +1874,6 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .playlists{
-    max-width: 320px;
     padding: 54px 0;
   }
 
@@ -1982,7 +1936,6 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .new__wave{
-    max-width: 320px;
     padding: 54px 0;
   }
 
