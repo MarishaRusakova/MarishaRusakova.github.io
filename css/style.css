@@ -318,8 +318,6 @@ html{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  column-gap: 30px;
-  
 }
 
 .transmission__cell{
@@ -527,32 +525,31 @@ html{
 
 .guests__cells {
   display: grid;
-  grid-template-columns:repeat(1, 1fr)
+  grid-template-columns:repeat(1, 1fr);
+  gap: 50px;
 }
 
 .cell {
-  grid-template-columns: repeat(2, 0fr);
-  gap: 30px;
-  display: grid;
-  margin-bottom: 50px;
-  position: relative;
+  display: flex;
+  flex-direction: row;
   height: 272px;
-  
 }
 
 .cell_end {
-  grid-template-columns: repeat(2, 0fr);
-  gap: 30px;
-  display: grid;
-  position: relative;
-  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
   height: 272px;
   
 }
 
-.text {
-  height: 272px;
+.image{
+  max-width: 432px;
+}
 
+.text{
+  padding: 30px;
+  padding-top: 0;
+  padding-right: 0;
 }
 
 .name {
@@ -561,7 +558,7 @@ html{
   font-weight: 500;
   line-height: 20px;
   margin-bottom: 8px;
-  width: 458px;
+  max-width: 458px;
   position: relative;
 
 }
@@ -573,6 +570,7 @@ html{
   line-height: 29px;
   max-width: 458px;
   position: relative;
+  margin-bottom: 88px;
 }
 
 .guests-btn {
@@ -588,7 +586,6 @@ html{
   font-weight: 500;  
   align-items: center;
   transition: background .15s linear, color .15s linear, border .15s linear;
-  position: absolute;
   bottom: 0;
 }
 
@@ -667,12 +664,15 @@ html{
 }
 
 .playlists__cell-text-block{
+  word-wrap: break-word;
   margin-top: -8px;
   padding: 16px;
   border: 1px solid #E6E8EC;
 }
 
 .playlists__cell-text-title{
+  min-width: 10px;
+  word-wrap: break-word;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
@@ -684,7 +684,6 @@ html{
   font-weight: 400;
   line-height: 12px;
   color: #A1A6B4;
-  white-space: nowrap;
 }
 
 .new__wave {
@@ -896,6 +895,7 @@ html{
 .about-us__figures-spiral-new{
   display: none;
 }
+
 
 .about-us__text-block{
   display: flex;
@@ -1229,7 +1229,10 @@ input[type="checkbox"]:checked + label:before {
 
   .text {
     height: 272px;
-    max-width: 362px;
+  }
+
+  .inf{
+    margin-bottom: 30px;
   }
 
   .playlists__flex-block{
@@ -1413,12 +1416,13 @@ input[type="checkbox"]:checked + label:before {
 
   .transmission_cells{
     margin-bottom: 60px;
+    max-width: 741px;
   }
 
   .transmission__line{
     display: flex;
-    margin-left: -115px;
     height: 1px;
+    max-width: 970px;
     background-color: #E6E8EC;
     margin-bottom: 30px;
   }
@@ -1436,21 +1440,32 @@ input[type="checkbox"]:checked + label:before {
     margin: 0 auto;
   }
 
-  .transmission__podtext{
-    min-width: 255px;
-  }
-
   .guests{
     max-height: 2264px;
   }
 
+  .image{
+    max-width: 540px;
+  }
+
+  .img_guests{
+    width: 100%;
+  }
+
+  .text{
+    padding: 0;
+    padding-top: 30px;
+    height: auto;
+  }
+
   .cell{
-    grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 412px;
+    flex-direction: column;
+    height: auto;
   }
 
   .cell_end{
-    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    height: 642px;
   }
 
   .guests-btn{
@@ -1474,8 +1489,17 @@ input[type="checkbox"]:checked + label:before {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .playlists__cell-text-block{
+    width: 100%;
+  }
+
   .playlists__block-two{
     padding-top: 200px;
+  }
+
+  .playlists__cell-text-block{
+    padding-bottom: 0;
+    height: 113px;
   }
 
   .new__wave-blocks{
@@ -1509,13 +1533,13 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .about-us__people-img{
-    width: 255px;
+    width: 100%;
     object-fit: cover;
     gap: 30px;
   }
 
   .about-us__people{
-    grid-template-columns: repeat(2, 255px);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .about-us_text-main{
@@ -1530,6 +1554,11 @@ input[type="checkbox"]:checked + label:before {
     align-items: center;
     height: 114px;
     margin-bottom: 30px;
+  }
+
+  .about-us__figures-dawn{
+    width: 112px;
+    height: 112px;
   }
   
   .about-us__figures-spiral{
