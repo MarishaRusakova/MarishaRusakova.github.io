@@ -1637,7 +1637,7 @@ input[type="checkbox"]:checked + label:before {
   
   }
 
-@media (max-width:350px){
+@media (max-width:717px){
 
   .control{
     padding: 0 32px;
@@ -1648,8 +1648,8 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .header{
-    max-width: 684px;
     margin-bottom: 0;
+    height: 140px;
   }
 
   .header__nav{
@@ -1661,7 +1661,6 @@ input[type="checkbox"]:checked + label:before {
     overflow: auto;
     padding: 17px 32px;
     margin-bottom: 0;
-    max-width: 684px;
   }
 
   .intro{
@@ -1678,53 +1677,26 @@ input[type="checkbox"]:checked + label:before {
     display: none;
   }
 
-  .intro__header {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 32px;
-  }
-
-  .intro__header-italic{
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 32px;
-  }
-
-  .intro__paragraph{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-  }
   .podcasts{
     padding: 40px 0;
   }
 
-  .title{
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-
   .podcasts__wrapper{
-    max-width: 288px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .podcasts__block{
     display: flex;
     flex-direction: column;
-    max-width: 288px;
   }
 
   .podcasts__img{
-    max-width: 256px;
-    height: 72px;
+    width: 100%;
+    height: 100px;
     max-inline-size: 100%;
     aspect-ratio: 4/1;
     object-fit: cover;
-  }
-
-  .podcasts__block__img{
-    height: auto;
   }
 
   .podcasts__rect{
@@ -1740,25 +1712,7 @@ input[type="checkbox"]:checked + label:before {
 
   .podcasts__text{
     padding: 30px 16px;
-    margin-top: 70px;
-  }
-
-  .podcasts__time{
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 12px;
-  }
-
-  .podcasts__text-podkast{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-  }
-
-  .podcasts__author{
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 12px;
+    margin-top: 100px;
   }
 
   .transmission{
@@ -1777,33 +1731,12 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .transmission__title-style{
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 24px;
     margin-bottom: 0;
   }
 
   .transmission__title{
     margin-bottom: 30px;
-    height: 24px;
-  }
-
-  .transmission__text-title{
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 12px;
-  }
-
-  .transmission__podtext{
-    font-size: 9px;
-    font-weight: 400;
-    line-height: 9px;
-  }
-
-  .transmission__btn-text{
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 12px;
+    margin-right: 0;
   }
 
   .transmission_img{
@@ -1822,12 +1755,6 @@ input[type="checkbox"]:checked + label:before {
     margin-bottom: 30px;
   }
 
-  .transmission__line{
-    max-width: 320px;
-    margin-left: -32px;
-    margin-bottom: 30px;
-  }
-
   .transmission__micro{
     max-width: 77px;
     margin-right: 13px;
@@ -1842,16 +1769,7 @@ input[type="checkbox"]:checked + label:before {
     padding: 9px 31px;
   }
 
-  .transmission__archive-text{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 16px;
-  }
-
   .transmission__podtext-btn{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
     color: #A1A6B4;
     margin-bottom: 7px;
   }
@@ -1860,6 +1778,26 @@ input[type="checkbox"]:checked + label:before {
     display: flex;
     flex-direction: column-reverse;
     align-items: start;
+  }
+
+  .new__wave-title{
+    max-width: 500px;
+  }
+
+  .line{
+    max-width: 500px;
+  }
+
+  .text-one{
+    max-width: 500px;
+  }
+
+  .text-two{
+    max-width: 500px;
+  }
+
+  .about-us__figures-spiral-new{
+    margin-left: -140px;
   }
 
 }
