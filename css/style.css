@@ -93,7 +93,6 @@ html{
   display: flex;
 }
 
-
 .header__nav-list-link{
   cursor: pointer;
   outline: none;
@@ -220,7 +219,7 @@ html{
   padding-bottom: 94px;
 }
 
-.title {
+.podcasts__title {
   font-family: 'Muller';
   font-size: 48px;
   line-height: 48px;
@@ -506,7 +505,7 @@ html{
   margin-bottom: 12px;
 }
 
-.guests_text-one {
+.guests_subtext-one {
   color: #A1A6B4;
   font-size: 20px;
   font-weight: 700;
@@ -514,7 +513,7 @@ html{
   margin-bottom: 12px;
 }
 
-.guests_text-two {
+.guests_subtext-two {
   color: #A1A6B4;
   font-size: 20px;
   font-weight: 400;
@@ -529,30 +528,30 @@ html{
   gap: 50px;
 }
 
-.cell {
+.guests__cell {
   display: flex;
   flex-direction: row;
   height: 272px;
 }
 
-.cell_end {
+.guests__cell-end {
   display: flex;
   flex-direction: row;
   height: 272px;
   
 }
 
-.image{
+.guests__cell-image{
   max-width: 432px;
 }
 
-.text{
+.guests__cell-text{
   padding: 30px;
   padding-top: 0;
   padding-right: 0;
 }
 
-.name {
+.guests__cell-name {
   color: #FFF;
   font-size: 20px;
   font-weight: 500;
@@ -563,7 +562,7 @@ html{
 
 }
 
-.inf {
+.guests__cell-inf {
   color: #A1A6B4;
   font-size: 16px;
   font-weight: 400;
@@ -686,25 +685,25 @@ html{
   color: #A1A6B4;
 }
 
-.new__wave {
+.new_wave {
   background-color: #292E39;
   width: 100%;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.new__wave-blocks{
+.new_wave__blocks{
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 30px;
 }
 
-.new__wave-block-photo {
+.new_wave__block-img {
   position: relative;
 }
 
-.new__mave-photo {
+.new_wave__img {
   position: relative;
   width: 100%;
 }
@@ -715,29 +714,28 @@ html{
   top: 0;
 }
 
-.new__wave-title {
+.new_wave__title {
   color: #F0D288;
   font-size: 48px;
   line-height: 48px;
   font-weight: 400;
   margin-bottom: 19px;
-  
 }
 
-.new__wave-blocks {
+.new_wave__blocks {
   display: flex;
 }
 
-.new__wave-block-text {
+.new_wave__block-text {
   max-width: 441px;
 }
 
-.line {
+.new_wave__line {
   max-width: 442px;
   margin-bottom: 19px;
 }
 
-.text-one {
+.new_wave__subtext-one {
   color: #FFFFFF;
   font-size: 16px;
   line-height: 29px;
@@ -746,7 +744,7 @@ html{
   max-width: 445px;
 }
 
-.text-two {
+.new_wave__subtext-two {
   color: #FFFFFF;
   font-size: 16px;
   line-height: 29px;
@@ -755,7 +753,7 @@ html{
   max-width: 445px;
 }
 
-.price {
+.new_wave__price {
   color: #FFFFFF;
   font-size: 30px;
   line-height: 30px;
@@ -763,8 +761,7 @@ html{
   margin-bottom: 30px;
 }
 
-
-.buy {
+.new_wave__buy {
   outline: none;
   padding: 25px 13px;
   border-radius: 1000px;
@@ -778,77 +775,76 @@ html{
   cursor: pointer;
   display:flex;
   transition: background .15s linear, color .15s linear, border .15s linear;
-
 }
 
-.yandex-logo {
+.new_wave__yandex-logo {
   margin-right: 8px;
 }
 
-.yellow-button {
+.new_wave__yellow-button {
   display: flex;
 }
 
-.buy .path1 {
+.new_wave__buy .path1 {
   fill: #F0D288;
   transition: fill .15s linear;
 }
 
-.buy .path2 {
+.new_wave__buy .path2 {
   fill: #121723;
   transition: fill .15s linear;
 }
 
-.buy:hover .path1 {
+.new_wave__buy:hover .path1 {
   fill: #121723;
 }
 
-.buy:focus .path1 {
+.new_wave__buy:focus .path1 {
   fill: #121723;
 }
 
-.buy:active .path1 {
+.new_wave__buy:active .path1 {
   fill: #F0D288;
 }
 
-.buy:hover .path2 {
+.new_wave__buy:hover .path2 {
   fill: #F0D288;
 }
 
-.buy:focus .path2 {
+.new_wave__buy:focus .path2 {
   fill: #BB973E;
 }
 
-.buy:active .path2 {
+.new_wave__buy:active .path2 {
   fill: #121723;
 }
 
-.buy:hover {
+.new_wave__buy:hover {
   background-color: #F0D288;
   border: 2px solid #F0D288;
   color: #121723;
 }
 
-.buy:focus {
+.new_wave__buy:focus {
   background-color: #BB973E;
   border: 2px solid #BB973E;
   color: #121723;
 
 }
-.buy:active {
+.new_wave__buy:active {
   background-color: #BB973E;
   border: 2px solid #F0D288;
   color: #121723;
 }
 
-.about-us {
+.about_us {
   background-color: #121723;
   padding-bottom: 94px;
   padding-top: 94px;
   width: 100%;
 }
 
- .about-us_title{
+ .about_us__title{
   color: #FFFFFF;
   font-size: 48px;
   line-height: 48px;
@@ -856,7 +852,7 @@ html{
   margin-bottom: 12px;
  }
 
- .about-us_text-title{
+ .about_us__subtext-one{
   color: #A1A6B4;
   font-size: 20px;
   font-weight: 700;
@@ -865,7 +861,7 @@ html{
   margin-bottom: 8px;
  }
 
-.about-us_text-main{
+.about-_us_text-main{
   color: #A1A6B4;
   max-width: 634px;
   font-size: 20px;
@@ -876,45 +872,45 @@ html{
   margin-right: 30px;
 }
 
-.about-us__text{
+.about_us__text{
   display: flex;
   flex-direction: column;
 }
 
-.about-us__figures{
+.about_us__figures{
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.about-us__figures-spiral{
+.about_us__figures-spiral{
   margin-right: 30px;
 }
 
 
-.about-us__figures-spiral-new{
+.about_us__figures-spiral-new{
   display: none;
 }
 
 
-.about-us__text-block{
+.about_us__text-block{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
 
-.about-us__people{
+.about_us__people{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 30px;
   gap: 30px;
 }
 
-.about-us__people-card{
+.about_us__people-card{
   object-fit: cover;
 }
 
-.about-us__people-img{
+.about_us__img{
   max-width: 100%;
   height: 255px;
   object-fit: cover;
@@ -922,7 +918,7 @@ html{
   margin-bottom: 30px;
 }
 
-.about-us_people-name{
+.about_us__name{
   color: #FFFFFF;
   font-size: 20px;
   font-weight: 500;
@@ -931,7 +927,7 @@ html{
   margin-bottom: 8px;
 }
 
-.about-us_people-text{
+.about_us__text{
   color: #A1A6B4;
   font-size: 16px;
   font-weight: 400;
@@ -939,29 +935,29 @@ html{
   text-align: left;
 }
 
-.about-us__email-name{
+.about_us__email-name{
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
   gap: 30px;
 }
 
-.about-us__name-text{
+.about_us__name-text{
   height: 70px;
   max-width: 445px;
 }
 
-.about-us__email-text{
+.about_us__email-text{
   height: 70px;
   max-width: 445px;
 }
 
-.about-us__message-text{
+.about_us__message-text{
   max-width: 920px;
   height: 150px;
 }
 
-.about-us__message{
+.about_us__message{
   margin-bottom: 30px;
   background-color: #121723;
   border: 1px solid #FFF;
@@ -978,7 +974,7 @@ html{
   width: 100%;
 }
 
-.about-us__email-name-text{
+.about_us__email-name-text{
   background-color: #121723;
   border: 1px solid #FFF;
   border-radius: 40px;
@@ -996,12 +992,12 @@ html{
   overflow: hidden;
 }
 
-.about-us__btn{
+.about_us__btn{
   margin-bottom: 30px;
   display: block;
 }
 
-.about-us_agreement-text{
+.about_us__agreement-text{
   color: #FFF;
   font-size: 12px;
   font-weight: 500;
@@ -1222,15 +1218,15 @@ input[type="checkbox"]:checked + label:before {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .guests_text-two{
+  .guests_subtext-two{
     max-width: 536px;
   }
 
-  .text {
+  .guests__cell-text {
     height: 272px;
   }
 
-  .inf{
+  .guests__cell-inf{
     margin-bottom: 30px;
   }
 
@@ -1286,7 +1282,7 @@ input[type="checkbox"]:checked + label:before {
   
   }
 
-  .new__mave-photo {
+  .new_wave__img {
     width: 397px;
     margin-right: 30px;
   }
@@ -1296,58 +1292,58 @@ input[type="checkbox"]:checked + label:before {
     height: 100px;
   }
 
-  .line {
+  .new_wave__line {
     max-width: 100%;
     object-fit: cover;
   }
-  .text-one{
+  .new_wave__subtext-one{
     max-width: 397px;
   }
 
-  .text-two{
+  .new_wave__subtext-two{
     max-width: 397px;
   }
 
-  .new__wave-blocks {
+  .new_wave__blocks {
     align-items: center;
   }
 
-  .about-us_text-title{
+  .about_us_text-title{
     max-width: 539px;
   }
 
-  .about-us_text-main{
+  .about_us__subtext-two{
     max-width: 539px;
   }
 
-  .about-us__figures-spiral{
+  .about_us__figures-spiral{
     display: none;
   }
 
-  .about-us__text-block{
+  .about_us__text-block{
     align-items: center;
   }
 
-  .about-us__people{
+  .about_us__people{
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 30px;
     gap: 30px;
   }
 
-  .about-us__people-img{
+  .about_us__img{
     height: auto;
     margin-bottom: 30px;
   }
 
-  .about-us__message-text{
+  .about_us__message-text{
     max-width: 824px;
   }
 
-  .about-us_massage{
+  .about_us_massage{
     width: 824px;
   }
 
-  .about-us__email-name-text{
+  .about_us__email-name-text{
     width: 397px;
   }
 
@@ -1441,26 +1437,26 @@ input[type="checkbox"]:checked + label:before {
     padding-bottom: 94px;
   }
 
-  .image{
+  .guests__cell-image{
     max-width: 540px;
   }
 
-  .img_guests{
+  .guests__img{
     width: 100%;
   }
 
-  .text{
+  .guests__cell-text{
     padding: 0;
     padding-top: 30px;
     height: auto;
   }
 
-  .cell{
+  .guests__cell{
     flex-direction: column;
     height: auto;
   }
 
-  .cell_end{
+  .guests__cell-end{
     flex-direction: column;
     height: 642px;
   }
@@ -1470,11 +1466,11 @@ input[type="checkbox"]:checked + label:before {
     position: relative;
   }
 
-  .img_guests{
+  .guests__img{
     max-width: 540px;
   }
 
-  .inf{
+  .guests__cell-inf{
     margin-bottom: 30px;
   }
 
@@ -1513,17 +1509,17 @@ input[type="checkbox"]:checked + label:before {
     height: 113px;
   }
 
-  .new__wave-blocks{
+  .new_wave__blocks{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 
   }
 
-  .new__wave{
+  .new_wave{
     padding-top: 54px;
   }
 
-  .line{
+  .new_wave__line{
     max-width: 732px;
   }
 
@@ -1531,21 +1527,21 @@ input[type="checkbox"]:checked + label:before {
     width: 160px;
   }
 
-  .text-one{
+  .new_wave__subtext-one{
     max-width: 540px;
   }
 
-  .new__mave-photo{
+  .new_wave__img{
     width: 100%;
     justify-content: center;
     margin-right: 0;
   }
 
-  .new__wave-block-photo{
+  .new_wave__block-img{
     max-width: 446px;
   }
 
-  .new__wave-block-text{
+  .new_wave__block-text{
     max-width: 540px;
   }
 
@@ -1553,23 +1549,23 @@ input[type="checkbox"]:checked + label:before {
     max-width: 540px;
   }
 
-  .about-us__people-img{
+  .about_us__img{
     width: 100%;
     object-fit: cover;
     gap: 30px;
   }
 
-  .about-us__people{
+  .about_us__people{
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .about-us_text-main{
+  .about_us__subtext-two{
     margin-bottom: 30px;
     padding-bottom: 0;
     margin-right: 0;
   }
 
-  .about-us__figures{
+  .about_us__figures{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1577,42 +1573,42 @@ input[type="checkbox"]:checked + label:before {
     margin-bottom: 30px;
   }
 
-  .about-us__figures-dawn{
+  .about_us__figures-dawn{
     width: 112px;
     height: 112px;
   }
   
-  .about-us__figures-spiral{
+  .about_us__figures-spiral{
     display: none;
   }
 
-  .about-us__figures-spiral-new{
+  .about_us__figures-spiral-new{
     display: flex;
     margin-left: -115px;
     margin-right: 30px;
   }
 
-  .about-us__text-block{
+  .about_us__text-block{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .about-us__people-img{
+  .about_us__img{
     max-width: 100%;
     height: 255px;
     object-fit: cover;
   }
 
-  .about-us_comm{
+  .about_us_comm{
     max-width: 474px;
   }
 
-  .about-us__email-name{
+  .about_us__email-name{
     flex-direction: column;
   }
 
-  .about-us__email-name-text{
+  .about_us__email-name-text{
     max-width: 474px;
   }
 
@@ -1780,23 +1776,23 @@ input[type="checkbox"]:checked + label:before {
     align-items: start;
   }
 
-  .new__wave-title{
+  .new_wave__title{
     max-width: 500px;
   }
 
-  .line{
+  .new_wave__line{
     max-width: 500px;
   }
 
-  .text-one{
+  .new_wave__subtext-one{
     max-width: 500px;
   }
 
-  .text-two{
+  .new_wave__subtext-two{
     max-width: 500px;
   }
 
-  .about-us__figures-spiral-new{
+  .about_us__figures-spiral-new{
     margin-left: -140px;
   }
 
