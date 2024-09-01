@@ -145,6 +145,8 @@ html{
 }
 
 .logo {
+  max-width: 160px;
+  height: 20px;
   margin-right: 80px;
   cursor: pointer;
 }
@@ -1181,11 +1183,6 @@ input[type="checkbox"]:checked + label:before {
     position: absolute;
     margin-bottom: 90px;
     padding: 22px 100px;
-  }
-
-  .header__logo-gap{
-    display: flex;
-    flex-direction: row;
   }
 
   .header__nav-list-item:not(:last-child) {
