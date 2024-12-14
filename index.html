@@ -1,16 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="shortcut icon" href="/assets/details-DEQESDme.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web-designer | Главная</title>
-    <script type="module" crossorigin src="/assets/index-DyUTG-S5.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Ci9lzeSu.css">
-  </head>
-  <body>
-    <div id="app"></div>
-    
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/details.png">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./font/font.css">
+    <title>Web-designer | Авторизация</title>
+</head>
+    <body>
+        <div class="authorization">
+            <p class="authorization__title">АВТОРИЗАЦИЯ</p>
+            <div class="authorization__block">
+                <input type="login" class="authorization__name" id="name" placeholder="Имя (на русском)">
+                <input type="date" class="authorization__date" id="date" placeholder="Дата рождения" max="2024-10-04" min="1924-01-01" value="">
+                 <div class="authorization__radio__block">
+                     <p class="authorization__text">Мужской</p><input type="radio" class="authorization__radio radio__one" name="radio" id="radio">
+                     <p class="authorization__text">Женский</p><input type="radio" class="authorization__radio radio__two" name="radio" id="radio2">
+                 </div>
+            </div>
+            <button class="button_main authorization__btn" id="authorization__btn" href="./main.html">
+                Войти
+            </button>
+        </div>
+    <script src="./sctipt/authorization_script.js"></script>
+    </body>
 </html>
