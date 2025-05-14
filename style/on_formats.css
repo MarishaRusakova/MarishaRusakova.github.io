@@ -1,0 +1,729 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    color: #121723;
+}
+
+:root{
+    --el : 0
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-image: url("/web_designer-main/image/Фон_зелень.png");
+    background-size: contain;
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 100px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(211, 240, 86, 0.5);
+    border-radius: 0 0 20px 20px;
+}
+
+.header_logo{
+    margin-right: 120px;
+}
+
+.header_logo-one{
+    font-family: 'IfKica';
+    background-color: #4039EB;
+    font-size: 12px;
+    color: #FFF;
+    cursor: pointer;
+    width: 255px;
+    height: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 100px;
+}
+
+.header_logo-two{
+    font-family: 'IfKica';
+    background-color: #F8F3F0;
+    font-size: 12px;
+    color: #123123;
+    cursor: pointer;
+    width: 85px;
+    height: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 100px;
+    transform: rotate(-4deg);
+    margin-left: 140px;
+}
+
+.header__nav-list-link{
+    cursor: pointer;
+    outline: none;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color .15s linear;
+}
+
+.header__nav-list-link:hover{
+    color: #4039EB;
+}
+
+.header__nav-list-link:active{
+    color: #F8F3F0;
+    background-color: #4039EB ;
+    border-radius: 1000px;
+    padding: 5px 5px;
+    width: 100% + 20%;
+}
+
+.header__nav-list-link-account{
+    margin-right: 30px;
+    font-size: 24px;   
+    right: 0;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 100px;
+    gap: 30px;
+}
+
+.header_name{
+    font-family: 'Montserrat';
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.header_block{
+    display: flex;
+    align-items: center;
+}
+
+.header_button{
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    background-color: #4039EB;
+    color: #FFF;
+    font-size: 12px;
+    border-radius: 1000px;
+    border: none;
+    transition: background .15s linear;
+}
+
+* Скрываем checkbox, который будем использовать для переключения видимости */
+#modalToggle {
+    display: none;
+  }
+  
+  /* Стили для модального окна */
+  .modal {
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none; /* Скрыто по умолчанию */
+  }
+  
+  /* Стили для контента модального окна */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* Показываем модальное окно, когда checkbox включен */
+  #modalToggle:checked + .modal {
+    display: block;
+  }
+
+.format{
+    padding-bottom: 100px;
+    background-image: url("/web_designer-main/image/Фон_зелень.png");
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+}
+
+.format_title-text-inline{
+    display: flex;
+}
+
+.format_title-text{
+    font-family: 'IfKica';
+    font-size: 36px;
+}
+
+.format_title-text-style-one{
+    margin-left: 10px;
+    background-color: #F8F3F0;
+    width: 260px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    border-radius: 100px;
+    transform: rotate(-2deg);
+}
+
+.format_title-text-style-two{
+    margin-left: 10px;
+    background-color: #4039EB;
+    color: #FFF;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    border-radius: 100px;
+    transform: rotate(1deg);
+    margin-bottom: 20px;
+}
+
+.format_title-podtext-style{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    margin-bottom: 150px;
+}
+
+.tab{
+    display: inline-block;
+}
+
+.tab-title {
+    display: inline-block;
+}
+
+.tab input[type="radio"] {
+    display: none; 
+}
+
+.tab-title {
+    background: #2E302B;
+    padding: 10px 10px;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+    color: #F8F3F0;
+    font-family: 'IfKica';
+}
+
+.tab-content {
+    position: absolute;
+    background-color: #F8F3F0;
+    border-radius:0 0  20px 20px ;
+    padding: 70px 0 70px 20px;
+    width: 579px;
+    margin-left: 0px;
+    display: none;
+}
+
+.content-two{
+    margin-left: -266px;
+}
+
+.tab :checked + .tab-title {
+    position: relative; 
+    background: #4039EB;
+    top: 1px; 
+    z-index: 1;
+}
+
+.tab :checked ~ .tab-content {
+    display: block;
+}
+
+.format_arrow-svg{
+    width: 25px;
+    margin-left: 10px;
+    align-content: center;
+}
+
+.format_text-card{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 45px;
+}
+
+@keyframes ani-rotate {
+    0%{ transform: rotate(0); }
+    100%{ transform: rotate(360deg); } 
+}
+
+.format_star-blue{
+    width: 130px;
+    align-items: center;
+    position: absolute;
+    margin-top: -79px;
+    margin-left: 130px;
+    animation-name: ani-rotate;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-duration: 8s;
+}
+
+.format_star-blue-text{
+    color: #F8F3F0;
+    font-family: 'IfKica';
+    font-size: 14px;
+    transform: rotate(-4deg);
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -30px;
+}
+
+.format_star{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.format_star-blue-text-two{
+    color: #F8F3F0;
+    font-family: 'IfKica';
+    font-size: 14px;
+    transform: rotate(-4deg);
+    position: absolute;
+    margin-left: 455px;
+    margin-top: -30px;
+}
+
+.format_free{
+    margin-left: 620px;
+    margin-top: -120px;
+    padding-top: 60px;
+    height: 229px;
+    width: 270px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #2E302B;
+}
+
+.format_free-title{
+    font-family: 'IfKica';
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #F8F3F0;
+}
+
+.format_free-podtitle{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #F8F3F0;
+    margin-bottom: 75px;
+}
+
+.format_button-blue{
+    width: 112px;
+    height: 35px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    background-color: #F8F3F0;
+    color: #2E302B;
+    font-size: 12px;
+    border-radius: 1000px;
+    border: none;
+    align-items: center;
+    padding-left: 15px;
+    text-align: center;
+    gap: 10px;
+    display: inline-flex;
+    transition: background .15s linear;
+}
+
+.format_arrow-svg-two{
+    width: 25px;
+    align-content: center;
+}
+
+.format_free-text{
+    position: absolute;
+    margin-left: 10px;
+    font-family: "IfKica";
+    background-color: #4039EB;
+    color: #FFF;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    border-radius: 100px;
+    transform: rotate(1deg);
+    margin-top: -80px;
+    margin-left: 60px;
+}
+
+.format_what-title{
+    font-family: 'IfKica';
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.format_what-inline{
+    display: flex;
+    gap: 30px;
+}
+
+.format_what-inline-one{
+    background-color: #F8F3F0;
+    width: 170px;
+    border-radius: 20px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+
+.format_what-inline-one-text{
+    font-family: 'Montserrat';
+    font-size: 12px;
+}
+
+.format_what-inline-one-number{
+    font-family: "IfKica";
+    position: absolute;
+    color: #FFF;
+    margin-top: -30px;
+    margin-left: 145px;
+}
+
+.Star_black{
+    width: 80px;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 115px;
+    animation-name: ani-rotate;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-duration: 8s;
+}
+
+.format_what-inline-two-number{
+    font-family: "IfKica";
+    position: absolute;
+    color: #FFF;
+    margin-top: -30px;
+    margin-left: 106px;
+}
+
+.format_what-inline-two{
+    background-color: #D3F056;
+    border: 1px solid #2E302B;
+    width: 120px;
+    border-radius: 20px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+
+.format_what-inline-two-text{
+    font-family: 'Montserrat';
+    font-size: 12px;
+}
+
+.Star_black-two{
+    width: 80px;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 80px;
+    animation-name: ani-rotate;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-duration: 8s;
+}
+
+.format_what-inline-three-number{
+    font-family: "IfKica";
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 197px;
+}
+
+.format_what-inline-three{
+    background-color: #2E302B;
+    width: 220px;
+    border-radius: 20px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+
+.format_what-inline-three-text{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #F8F3F0;
+}
+
+.Star_black-three{
+    width: 80px;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 170px;
+    animation-name: ani-rotate;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-duration: 8s;
+}
+
+.format_what-inline-four-number{
+    font-family: "IfKica";
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 165px;
+}
+
+.format_what-inline-four{
+    background-color: #4039EB;
+    width: 200px;
+    border-radius: 20px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+
+.format_what-inline-four-text{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #F8F3F0;
+}
+
+.Star_black-four{
+    width: 80px;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 140px;
+    animation-name: ani-rotate;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-duration: 8s;
+}
+
+.registration{
+    background-image: url("/web_designer-main/image/Фон_белень.png");
+    background-size: contain;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    cursor: default;
+    justify-content: center;
+}
+
+.registration_forma{
+    background-color: #4039EB;
+    width: 360px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.registration_forma_totle-one{
+    width: 220px;
+    height: 50px;
+    font-family: 'IfKica';
+    background-color: #D3F056;
+    color: #2E302B;
+    font-size: 36px;
+    border-radius: 1000px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    transform: rotate(-1deg);
+}
+
+.registration_forma_totle-two{
+    width: 250px;
+    height: 50px;
+    font-family: 'IfKica';
+    background-color: #2E302B;
+    color: #F8F3F0;
+    font-size: 36px;
+    border-radius: 1000px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    transform: rotate(-5deg);
+    margin-left: 60px;
+    margin-top: -6px;
+    margin-bottom: 40px;
+}
+
+.registration_name-parent{
+    height: 20px;
+    border-radius: 100px;
+    padding: 5px 10px;
+    background-color: #F8F3F0;
+    width: 280px;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+}
+
+.registration_name-child{
+    height: 20px;
+    border-radius: 100px;
+    padding: 5px 10px;
+    width: 280px;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+}
+
+.registration_number-phone{
+    height: 20px;
+    border-radius: 100px;
+    padding: 5px 10px;
+    width: 280px;
+    background-color: #F8F3F0;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+}
+
+.registration_email{
+    height: 20px;
+    border-radius: 100px;
+    padding: 5px 10px;
+    width: 280px;
+    background-color: #F8F3F0;
+    font-family: 'Montserrat';
+    margin-bottom: 40px;
+}
+
+.registration_button{
+    height: 40px;
+    background-color: #D3F056;
+    border: none;
+    border-radius: 100px;
+    padding: 5px 10px;
+    width: 300px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+}
+.registration_podtext{
+    font-family: 'Montserrat';
+    font-size: 9px;
+    color: #F8F3F0;
+}
+
+.registration_img{
+    width: 410px;
+    height: 100%;
+    margin-right: 40px;
+    margin-top: 90px;
+}
+
+footer{
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    background-color: #2E302B;
+}
+
+.footer_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.footer__nav-list-link{
+    cursor: pointer;
+    outline: none;
+    color: #F8F3F0;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color .15s linear;
+}
+
+.footer__nav-list-link:hover{
+    color: #D3F056;
+}
+
+.footer__nav-list-link:active{
+    color: #2E302B;
+    background-color: #D3F056 ;
+    border-radius: 40px;
+    padding: 5px 5px;
+    width: 100% + 20%;
+}
+
+.footer__nav-list-link-account{
+    margin-right: 30px;
+    font-size: 24px;   
+    right: 0;
+}
+
+.footer__nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+    gap: 30px;
+    text-align: center;
+}
+
+.footer_confid-text{
+    cursor: pointer;
+    color: #F8F3F0;
+    outline: none;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color .15s linear;
+}
+
+.footer_year{
+    cursor: pointer;
+    color: #F8F3F0;
+    outline: none;
+    font-family: 'IfKica';
+    font-size: 12px;
+    text-decoration: none;
+    transition: color .15s linear;
+}
+
+.footer_year:hover{
+    color: #D3F056;
+}
+
+.footer_year:active{
+    color: #2E302B;
+    background-color: #D3F056 ;
+    border-radius: 40px;
+    padding: 5px 5px;
+    width: 100% + 20%;
+}

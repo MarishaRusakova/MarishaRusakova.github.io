@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    color: #121723;
+}
+
+:root{
+    --el : 0
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-image: url("../image/Фон_серень.png");
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(211, 240, 86, 0.5);
+    border-radius: 0 0 20px 20px;
+}
+
+.header_logo{
+    margin-right: 120px;
+}
+
+.header_logo-one{
+    font-family: 'IfKica';
+    background-color: #4039EB;
+    font-size: 12px;
+    color: #FFF;
+    cursor: pointer;
+    width: 255px;
+    height: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 100px;
+}
+
+.header_logo-two{
+    font-family: 'IfKica';
+    background-color: #F8F3F0;
+    font-size: 12px;
+    color: #123123;
+    cursor: pointer;
+    width: 85px;
+    height: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 100px;
+    transform: rotate(-4deg);
+    margin-left: 140px;
+}
+
+.header__nav-list-link{
+    cursor: pointer;
+    outline: none;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color .15s linear;
+}
+
+.header__nav-list-link:hover{
+    color: #4039EB;
+}
+
+.header__nav-list-link:active{
+    color: #F8F3F0;
+    background-color: #4039EB ;
+    border-radius: 1000px;
+    padding: 5px 5px;
+    width: 100% + 20%;
+}
+
+.header__nav-list-link-account{
+    margin-right: 30px;
+    font-size: 24px;   
+    right: 0;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+    gap: 30px;
+}
+
+.header_block{
+    display: flex;
+    align-items: center;
+}
+
+.header_button{
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    background-color: #4039EB;
+    color: #FFF;
+    font-size: 12px;
+    border-radius: 1000px;
+    border: none;
+    transition: background .15s linear;
+}
+
+.authorization{
+    width: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.authorization_forma{
+    background-color: #4039EB;
+    height: 380px;
+    margin-left: 1000px;
+    border-radius: 40px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.authorization_forma_totle-one{
+    width: 160px;
+    height: 50px;
+    font-family: 'IfKica';
+    background-color: #D3F056;
+    color: #2E302B;
+    font-size: 36px;
+    border-radius: 1000px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    transform: rotate(-1deg);
+}
+
+.authorization_forma_totle-two{
+    width: 290px;
+    height: 50px;
+    font-family: 'IfKica';
+    background-color: #2E302B;
+    color: #F8F3F0;
+    font-size: 20px;
+    border-radius: 1000px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    transform: rotate(-5deg);
+    margin-left: 20px;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+.authorization_name-parent{
+    height: 20px;
+    border-radius: 100px;
+    padding: 5px 10px;
+    width: 280px;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+}
+
+.authorization_name-child{
+    height: 20px;
+    border-radius: 100px;
+    padding: 5px 10px;
+    width: 280px;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+}
+
+.authorization_number-phone{
+    height: 20px;
+    border-radius: 100px;
+    padding: 5px 10px;
+    width: 280px;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+}
+
+.authorization_email{
+    height: 20px;
+    border-radius: 100px;
+    padding: 5px 10px;
+    width: 280px;
+    font-family: 'Montserrat';
+    margin-bottom: 40px;
+}
+
+.authorization_button{
+    height: 40px;
+    background-color: #D3F056;
+    border: none;
+    border-radius: 100px;
+    padding: 5px 10px;
+    width: 100px;
+    margin-left: 100px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+}
+.authorization_podtext{
+    font-family: 'Montserrat';
+    font-size: 9px;
+    color: #F8F3F0;
+}
+
+footer{
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    background-color: #2E302B;
+}
+
+.footer_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.footer__nav-list-link{
+    cursor: pointer;
+    outline: none;
+    color: #F8F3F0;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color .15s linear;
+}
+
+.footer__nav-list-link:hover{
+    color: #D3F056;
+}
+
+.footer__nav-list-link:active{
+    color: #2E302B;
+    background-color: #D3F056 ;
+    border-radius: 40px;
+    padding: 5px 5px;
+    width: 100% + 20%;
+}
+
+.footer__nav-list-link-account{
+    margin-right: 30px;
+    font-size: 24px;   
+    right: 0;
+}
+
+.footer__nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+    gap: 30px;
+    text-align: center;
+}
+
+.footer_confid-text{
+    cursor: pointer;
+    color: #F8F3F0;
+    outline: none;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color .15s linear;
+}
+
+.footer_year{
+    cursor: pointer;
+    color: #F8F3F0;
+    outline: none;
+    font-family: 'IfKica';
+    font-size: 12px;
+    text-decoration: none;
+    transition: color .15s linear;
+}
+
+.footer_year:hover{
+    color: #D3F056;
+}
+
+.footer_year:active{
+    color: #2E302B;
+    background-color: #D3F056 ;
+    border-radius: 40px;
+    padding: 5px 5px;
+    width: 100% + 20%;
+}

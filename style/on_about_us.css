@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    color: #121723;
+}
+
+:root{
+    --el : 0
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-image: url("/web_designer-main/image/Фон_зелень.png");
+    background-size: contain;
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(211, 240, 86, 0.5);
+    border-radius: 0 0 20px 20px;
+}
+
+.header_logo{
+    margin-right: 120px;
+}
+
+.header_logo-one{
+    font-family: 'IfKica';
+    background-color: #4039EB;
+    font-size: 12px;
+    color: #FFF;
+    cursor: pointer;
+    width: 255px;
+    height: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 100px;
+}
+
+.header_name{
+    font-family: 'Montserrat';
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.header_logo-two{
+    font-family: 'IfKica';
+    background-color: #F8F3F0;
+    font-size: 12px;
+    color: #123123;
+    cursor: pointer;
+    width: 85px;
+    height: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 100px;
+    transform: rotate(-4deg);
+    margin-left: 140px;
+}
+
+.header__nav-list-link{
+    cursor: pointer;
+    outline: none;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color .15s linear;
+}
+
+.header__nav-list-link:hover{
+    color: #4039EB;
+}
+
+.header__nav-list-link:active{
+    color: #F8F3F0;
+    background-color: #4039EB ;
+    border-radius: 1000px;
+    padding: 5px 5px;
+    width: 100% + 20%;
+}
+
+.header__nav-list-link-account{
+    margin-right: 30px;
+    font-size: 24px;   
+    right: 0;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 100px;
+    gap: 30px;
+}
+
+.header_block{
+    display: flex;
+    align-items: center;
+}
+
+.header_button{
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    background-color: #4039EB;
+    color: #FFF;
+    font-size: 12px;
+    border-radius: 1000px;
+    border: none;
+    transition: background .15s linear;
+}
+
+.about_us{
+    background-image: url("/web_designer-main/image/Фон_белень.png");
+    background-size: contain;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    cursor: default;
+}
+
+.about_us-intro{
+    display: flex;
+    justify-content: center;
+}
+
+.about_us-intro-title{
+    background-color: #4039EB;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 800px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_us-intro-text{
+    font-family: 'IfKica';
+    font-size: 24px;
+    color: #F8F3F0;
+}
+
+.about_us-intro-text-inline{
+    display: flex;
+}
+
+.about_us-intro-text-style{
+    background-color: #D3F056;
+    font-family: 'IfKica';
+    font-size: 24px;
+    border-radius: 1000px;
+    text-align: center;
+    align-content: center;
+    width: 170px;
+    height: 30px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+    transform: rotate(-2deg);
+}
+
+.about_us-intro-podtext{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #F8F3F0;
+    text-align: center
+}
+
+.about_us-intro-photo-one{
+    position: absolute;
+    width: 180px;
+    margin-top: -130px;
+    margin-left: -580px;
+}
+
+.about_us-intro-star-one{
+    position: absolute;
+    width: 100px;
+    margin-top: -50px;
+    margin-right: -640px;
+}
+
+.about_us-intro-star-one { 
+    animation-name: ani-rotate;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-duration: 8s;
+}
+    @keyframes ani-rotate {
+    0%{ transform: rotate(0); }
+    100%{ transform: rotate(360deg); } 
+}
+
+.about_us-intro-star-two { 
+    animation-name: ani-rotate;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-duration: 8s;
+}
+    @keyframes ani-rotate {
+    0%{ transform: rotate(0); }
+    100%{ transform: rotate(360deg); } 
+}
+
+.about_us-intro-star-two{
+    position: absolute;
+    width: 60px;
+    margin-top: 130px;
+    margin-left: -798px;
+}
+
+.about_us-comp-img{
+    width: 500px;
+    margin-left: -80px;
+    margin-top: -20px;
+    margin-right: -30px;
+}
+
+.about_us-podintro{
+    display: flex;
+    align-items: center;
+}
+
+.about_us-title{
+    margin-top: -20px;
+}
+
+.about_us-title-text{
+    font-family: 'IfKica';
+    font-size: 36px;
+}
+
+.about_us-title-podtext{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.about_us-plashki-inline{
+    display: flex;
+}
+
+.about_us-plashka-one{
+    width: 150px;
+    height: 30px;
+    font-family: 'Montserrat';
+    background-color: #4039EB;
+    color: #F8F3F0;
+    font-size: 12px;
+    border-radius: 1000px;
+    border: none;
+    align-content: center;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.about_us-plashka-two{
+    width: 110px;
+    height: 30px;
+    font-family: 'Montserrat';
+    background-color: #D3F056;
+    color: #123123;
+    font-size: 12px;
+    border-radius: 1000px;
+    border: none;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.about_us-plashka-three{
+    width: 198px;
+    height: 30px;
+    font-family: 'Montserrat';
+    background-color: #2E302B;
+    color: #F8F3F0;
+    font-size: 12px;
+    border-radius: 1000px;
+    border: none;
+    align-content: center;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.about_us-plashka-four{
+    width: 138px;
+    height: 30px;
+    font-family: 'Montserrat';
+    background-color: none;
+    color: #2E302B;
+    font-size: 12px;
+    border-radius: 1000px;
+    border: 1px solid #2E302B;
+    align-content: center;
+    text-align: center;
+}
+
+.about_us-intro-photo-two{
+    margin-right: -870px;
+    width: 200px;
+    margin-top: -270px;
+}
+
+footer{
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    background-color: #2E302B;
+}
+
+.footer_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.footer__nav-list-link{
+    cursor: pointer;
+    outline: none;
+    color: #F8F3F0;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color .15s linear;
+}
+
+.footer__nav-list-link:hover{
+    color: #D3F056;
+}
+
+.footer__nav-list-link:active{
+    color: #2E302B;
+    background-color: #D3F056 ;
+    border-radius: 40px;
+    padding: 5px 5px;
+    width: 100% + 20%;
+}
+
+.footer__nav-list-link-account{
+    margin-right: 30px;
+    font-size: 24px;   
+    right: 0;
+}
+
+.footer__nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+    gap: 30px;
+    text-align: center;
+}
+
+.footer_confid-text{
+    cursor: pointer;
+    color: #F8F3F0;
+    outline: none;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color .15s linear;
+}
+
+.footer_year{
+    cursor: pointer;
+    color: #F8F3F0;
+    outline: none;
+    font-family: 'IfKica';
+    font-size: 12px;
+    text-decoration: none;
+    transition: color .15s linear;
+}
+
+.footer_year:hover{
+    color: #D3F056;
+}
+
+.footer_year:active{
+    color: #2E302B;
+    background-color: #D3F056 ;
+    border-radius: 40px;
+    padding: 5px 5px;
+    width: 100% + 20%;
+}

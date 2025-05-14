@@ -1,29 +1,11 @@
-/*обычный*/
+/*Заголовки*/
 @font-face {
-	font-family: 'CormorantInfant-Regular'; 
-	src: url(/font/CormorantInfant-Regular.ttf) 
+	font-family: 'IfKica'; 
+	src: url(/web_designer-main/font/if-kica.ttf) 
 }
 
-/*жирный*/
+/*Основной текст*/
 @font-face {
-	font-family: 'CormorantInfant-Bold'; 
-	src: url(/font/CormorantInfant-Bold.ttf) 
-}
-
-/*средний*/
-@font-face {
-	font-family: 'CormorantInfant-Medium'; 
-	src: url(/font/CormorantInfant-Medium.ttf) 
-}
-
-/*полужирный*/
-@font-face {
-	font-family: 'CormorantInfant-SemiBold'; 
-	src: url(/font/CormorantInfant-SemiBold.ttf) 
-}
-
-/*легкий*/
-@font-face {
-	font-family: 'CormorantInfant-Light'; 
-	src: url(/font/CormorantInfant-Light.ttf) 
+	font-family: 'Montserrat'; 
+	src: url(/web_designer-main/font/ofont.ru_Montserrat.ttf) 
 }
