@@ -15,7 +15,7 @@ html{
 }
 
 body{
-    background-image: url("/web_designer-main/image/Фон_зелень.png");
+    background-image: url("/image/Фон_зелень.png");
     background-size: contain;
 }
 
@@ -155,7 +155,7 @@ header{
   }
 
   .registration{
-    background-image: url("/web_designer-main/image/Фон_белень.png");
+    background-image: url("/image/Фон_белень.png");
     background-size: contain;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -273,7 +273,7 @@ header{
 }
 
 .coursies{
-    background-image: url("/web_designer-main/image/Фон_серень.png");
+    background-image: url("/image/Фон_серень.png");
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -419,7 +419,7 @@ header{
 }
 
 .coursies_card-two{
-    background-image: url("/web_designer-main/image/Фон_зелень.png");
+    background-image: url("/image/Фон_зелень.png");
     background-size: cover;
     width: 400px;
     height: 220px;
@@ -481,7 +481,7 @@ header{
 }
 
 .coursies_card-three{
-    background-image: url("/web_designer-main/image/Фон_синень.png");
+    background-image: url("/image/Фон_синень.png");
     background-size: cover;
     width: 350px;
     border-radius: 40px;

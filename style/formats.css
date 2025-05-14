@@ -15,7 +15,7 @@ html{
 }
 
 body{
-    background-image: url("/web_designer-main/image/Фон_зелень.png");
+    background-image: url("/image/Фон_зелень.png");
     background-size: contain;
 }
 
@@ -120,7 +120,7 @@ header{
 .format{
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: url("/web_designer-main/image/Фон_зелень.png");
+    background-image: url("/image/Фон_зелень.png");
     background-size: contain;
     display: flex;
     justify-content: center;

@@ -1,11 +1,11 @@
 /*Заголовки*/
 @font-face {
 	font-family: 'IfKica'; 
-	src: url(/web_designer-main/font/if-kica.ttf) 
+	src: url(/font/if-kica.ttf) 
 }
 
 /*Основной текст*/
 @font-face {
 	font-family: 'Montserrat'; 
-	src: url(/web_designer-main/font/ofont.ru_Montserrat.ttf) 
+	src: url(/font/ofont.ru_Montserrat.ttf) 
 }

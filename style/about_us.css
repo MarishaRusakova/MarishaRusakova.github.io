@@ -15,7 +15,7 @@ html{
 }
 
 body{
-    background-image: url("/web_designer-main/image/Фон_зелень.png");
+    background-image: url("/image/Фон_зелень.png");
     background-size: contain;
 }
 
@@ -118,7 +118,7 @@ header{
 }
 
 .about_us{
-    background-image: url("/web_designer-main/image/Фон_белень.png");
+    background-image: url("/image/Фон_белень.png");
     background-size: contain;
     padding-top: 100px;
     padding-bottom: 40px;
